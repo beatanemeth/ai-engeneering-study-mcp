@@ -1,0 +1,17 @@
+repos:
+  # 1. Clean Jupyter Notebooks
+  # See https://pre-commit.com for more information
+  - repo: https://github.com/kynan/nbstripout
+    rev: 0.8.1 # Use the latest version
+    hooks:
+      - id: nbstripout
+
+  # 2. General Git Hygiene
+  # See https://pre-commit.com/hooks.html for more hooks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace # Removes extra spaces at the end of lines
+      - id: end-of-file-fixer # Ensures files end with a newline
+      - id: check-yaml # Validates your YAML syntax
+      - id: check-added-large-files # Prevents accidentally committing giant files

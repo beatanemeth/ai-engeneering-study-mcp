@@ -1,0 +1,32 @@
+[
+	{
+		"label": "Strategic Leadership",
+		"slug": "strategic-leadership",
+		"postCount": 124,
+		"publishedPostCount": 118,
+		"language": "en",
+		"_id": "4f92bc1a-33e1-4d92-a1b5-7722c19a4e2b",
+		"_createdDate": "2024-06-12T14:20:00.000Z",
+		"_updatedDate": "2026-01-15T10:30:45.125Z"
+	},
+	{
+		"label": "Creative Design",
+		"slug": "creative-design",
+		"postCount": 56,
+		"publishedPostCount": 50,
+		"language": "en",
+		"_id": "b0a1d2e3-c4f5-46a7-89b0-c1d2e3f4a5b6",
+		"_createdDate": "2024-08-20T09:15:30.000Z",
+		"_updatedDate": "2026-02-01T16:45:22.990Z"
+	},
+	{
+		"label": "Technical Writing",
+		"slug": "technical-writing",
+		"postCount": 210,
+		"publishedPostCount": 205,
+		"language": "en",
+		"_id": "9e8d7c6b-5a43-4210-9876-543210fedcba",
+		"_createdDate": "2025-01-05T11:00:00.000Z",
+		"_updatedDate": "2026-02-03T08:12:10.000Z"
+	}
+]

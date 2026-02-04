@@ -1,0 +1,29 @@
+{
+	"currentPage": 1,
+	"items": [
+		{
+			"_id": "a1b2c3d4-e5f6-4a5b-8c9d-0e1f2a3b4c5d",
+			"_owner": "user_88aa-99bb-cc11-dd22-ee33ff44gg55",
+			"_createdDate": "2026-01-10T08:30:00.000Z",
+			"text": "Comprehensive project tracking templates including Gantt charts, burn-down lists, and resource allocation spreadsheets for agile teams.",
+			"_updatedDate": "2026-02-01T14:20:10.500Z",
+			"title": "Project Planning Assets"
+		},
+		{
+			"_id": "f9e8d7c6-b5a4-4321-9876-543210fedcba",
+			"_owner": "user_88aa-99bb-cc11-dd22-ee33ff44gg55",
+			"_createdDate": "2026-01-12T10:15:45.123Z",
+			"text": "A curated collection of high-resolution stock photography and vector icons suitable for corporate presentations and marketing briefs.",
+			"_updatedDate": "2026-01-25T09:05:33.000Z",
+			"title": "Creative Brand Kit"
+		},
+		{
+			"_id": "12345678-1234-5678-1234-567812345678",
+			"_owner": "admin_0011-2233-4455-6677-8899aabbccdd",
+			"_createdDate": "2026-01-15T16:00:00.000Z",
+			"text": "Step-by-step video tutorials and interactive PDF guides focusing on advanced data visualization techniques using Python and R.",
+			"_updatedDate": "2026-02-03T11:45:12.888Z",
+			"title": "Data Science Learning Modules"
+		}
+	]
+}

@@ -1,0 +1,30 @@
+{
+	"currentPage": 0,
+	"items": [
+		{
+			"arraystring": [
+				"lorem",
+				"ipsum",
+				"dolor sit",
+				"amet",
+				"consectetur",
+				"adipiscing"
+			],
+			"urlvege": "lorem-ipsum-articulus",
+			"lead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.",
+			"link-tudastar-1-title": "/knowledge-base/category/lorem-ipsum",
+			"metaDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.",
+			"_id": "dummy-id-001",
+			"_owner": "dummy-owner-abc",
+			"_createdDate": "2026-01-01T09:00:00.000Z",
+			"link-copy-of-tudastar-all": "/knowledge-base/",
+			"urlvege1": "dummy-category",
+			"articletext": "<p class=\"font_8\" style=\"text-align: justify\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>\n<p class=\"font_8\" style=\"text-align: justify\"><br></p>\n<p class=\"font_8\" style=\"text-align: justify\">Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie.</p>\n<p class=\"font_8\" style=\"text-align: justify\"><br></p>\n<h6 class=\"font_6\" style=\"text-align: justify\"><strong>Lorem ipsum section title</strong></h6>\n<h6 class=\"font_6\" style=\"text-align: justify\"><br></h6>\n<p class=\"font_8\" style=\"text-align: justify\">Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat.</p>\n<p class=\"font_8\" style=\"text-align: justify\"><br></p>\n<h6 class=\"font_6\" style=\"text-align: justify\">Another dummy heading</h6>\n<h6 class=\"font_6\" style=\"text-align: justify\"><br></h6>\n<p class=\"font_8\" style=\"text-align: justify\">Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus. Phasellus ultrices nulla quis nibh.</p>\n<p class=\"font_8\"><br></p>\n<p class=\"font_8\" style=\"text-align: justify\"><strong>Lorem ipsum dolor sit amet</strong>, consectetur adipiscing elit. Donec odio. Quisque volutpat mattis eros.</p>\n<p class=\"font_8\"><br></p>\n<p class=\"font_8\" style=\"text-align: justify\">Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>\n<p class=\"font_8\"><br></p>\n<ul>\n<li>Lorem ipsum dolor sit amet</li>\n<li>Consectetur adipiscing elit</li>\n<li>Sed do eiusmod tempor</li>\n<li>Incididunt ut labore</li>\n</ul>\n<p class=\"font_8\"><br></p>\n<p class=\"font_8\" style=\"text-align: justify\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>\n<p class=\"font_8\"><br></p>\n<p class=\"font_8\"><em>Cover image: Placeholder source</em></p>\n<p class=\"font_8\"><em>This article is dummy content for testing purposes.</em></p>",
+			"_updatedDate": "2026-01-01T10:30:00.000Z",
+			"link-tudastar-1-all": "/knowledge-base/dummy-category",
+			"picture": "wix:image://v1/dummy-image-id/placeholder.jpg",
+			"category": "dummy-category-id-123",
+			"title": "Lorem Ipsum Dummy Article"
+		}
+	]
+}

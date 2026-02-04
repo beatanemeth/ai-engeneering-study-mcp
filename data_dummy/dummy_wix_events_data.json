@@ -1,0 +1,306 @@
+[
+	{
+		"location": {
+			"name": "14:00 – 16:00 Online esemény (dummy)",
+			"type": "ONLINE",
+			"locationTbd": false
+		},
+		"dateAndTimeSettings": {
+			"dateAndTimeTbd": false,
+			"startDate": "2026-02-15T13:00:00.000Z",
+			"endDate": "2026-02-15T15:00:00.000Z",
+			"timeZoneId": "Europe/Budapest",
+			"hideEndDate": false,
+			"showTimeZone": false,
+			"recurrenceStatus": "ONE_TIME",
+			"recurringEvents": {
+				"individualEventDates": []
+			},
+			"formatted": {
+				"dateAndTime": "2026. február 15. 14:00–16:00",
+				"startDate": "2026. február 15.",
+				"startTime": "14:00",
+				"endDate": "2026. február 15.",
+				"endTime": "16:00"
+			}
+		},
+		"title": "Lorem Ipsum Online Esemény",
+		"shortDescription": "Lorem ipsum rövid leírás.",
+		"detailedDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		"slug": "lorem-ipsum-online-esemeny",
+		"status": "ENDED",
+		"eventPageUrl": "https://example.com/event-details/lorem-ipsum-online-esemeny",
+		"summaries": {
+			"rsvps": {
+				"totalCount": 10,
+				"yesCount": 8,
+				"noCount": 2,
+				"waitlistCount": 0
+			},
+			"tickets": {
+				"ticketsSold": 0,
+				"currencyLocked": false,
+				"totalOrders": 0
+			}
+		},
+		"instanceId": "dummy-instance-id-001",
+		"guestListSettings": {
+			"displayedPublicly": true
+		},
+		"userId": "dummy-user-id-123",
+		"onlineConferencing": {
+			"enabled": false,
+			"providerName": "",
+			"type": "UNKNOWN_CONFERENCE_TYPE"
+		},
+		"contactLabel": "custom.lorem-ipsum-event",
+		"categories": {
+			"categories": [
+				{
+					"name": "dummy",
+					"hidden": false,
+					"type": "MANUAL",
+					"_id": "dummy-category-001",
+					"_createdDate": "2026-01-01T08:00:00.000Z"
+				},
+				{
+					"name": "example",
+					"hidden": false,
+					"type": "MANUAL",
+					"_id": "dummy-category-002",
+					"_createdDate": "2026-01-01T08:05:00.000Z"
+				}
+			]
+		},
+		"eventDisplaySettings": {
+			"hideEventDetailsButton": false,
+			"hideEventDetailsPage": false
+		},
+		"labellingSettings": {
+			"assignedContactsLabelDeleted": false
+		},
+		"description": {
+			"nodes": [
+				{
+					"type": "DIVIDER",
+					"nodes": [],
+					"dividerData": {
+						"containerData": {
+							"width": {},
+							"alignment": "CENTER",
+							"spoiler": {},
+							"height": {},
+							"textWrap": false
+						},
+						"lineStyle": "SINGLE",
+						"width": "MEDIUM",
+						"alignment": "CENTER"
+					},
+					"_id": "div-001"
+				},
+				{
+					"type": "PARAGRAPH",
+					"nodes": [
+						{
+							"type": "TEXT",
+							"nodes": [],
+							"textData": {
+								"text": "Lorem Ipsum Online Esemény",
+								"decorations": [
+									{
+										"type": "BOLD",
+										"fontWeightValue": 700
+									}
+								]
+							},
+							"_id": ""
+						}
+					],
+					"paragraphData": {
+						"textStyle": {
+							"textAlignment": "CENTER"
+						}
+					},
+					"_id": "p-001"
+				},
+				{
+					"type": "PARAGRAPH",
+					"nodes": [
+						{
+							"type": "TEXT",
+							"nodes": [],
+							"textData": {
+								"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+								"decorations": []
+							},
+							"_id": ""
+						}
+					],
+					"paragraphData": {
+						"textStyle": {
+							"textAlignment": "AUTO"
+						}
+					},
+					"_id": "p-002"
+				},
+				{
+					"type": "PARAGRAPH",
+					"nodes": [
+						{
+							"type": "TEXT",
+							"nodes": [],
+							"textData": {
+								"text": "Program elemei:",
+								"decorations": [
+									{
+										"type": "BOLD",
+										"fontWeightValue": 700
+									}
+								]
+							},
+							"_id": ""
+						}
+					],
+					"paragraphData": {},
+					"_id": "p-003"
+				},
+				{
+					"type": "BULLETED_LIST",
+					"nodes": [
+						{
+							"type": "LIST_ITEM",
+							"nodes": [
+								{
+									"type": "PARAGRAPH",
+									"nodes": [
+										{
+											"type": "TEXT",
+											"nodes": [],
+											"textData": {
+												"text": "Lorem Ipsum előadás",
+												"decorations": []
+											},
+											"_id": ""
+										}
+									],
+									"paragraphData": {},
+									"_id": "li-001"
+								}
+							],
+							"_id": "li-wrap-001"
+						},
+						{
+							"type": "LIST_ITEM",
+							"nodes": [
+								{
+									"type": "PARAGRAPH",
+									"nodes": [
+										{
+											"type": "TEXT",
+											"nodes": [],
+											"textData": {
+												"text": "Dolor sit amet interaktív rész",
+												"decorations": []
+											},
+											"_id": ""
+										}
+									],
+									"paragraphData": {},
+									"_id": "li-002"
+								}
+							],
+							"_id": "li-wrap-002"
+						},
+						{
+							"type": "LIST_ITEM",
+							"nodes": [
+								{
+									"type": "PARAGRAPH",
+									"nodes": [
+										{
+											"type": "TEXT",
+											"nodes": [],
+											"textData": {
+												"text": "Consectetur adipiscing zárás",
+												"decorations": []
+											},
+											"_id": ""
+										}
+									],
+									"paragraphData": {},
+									"_id": "li-003"
+								}
+							],
+							"_id": "li-wrap-003"
+						}
+					],
+					"bulletedListData": {
+						"indentation": 0
+					},
+					"_id": "bl-001"
+				},
+				{
+					"type": "PARAGRAPH",
+					"nodes": [
+						{
+							"type": "TEXT",
+							"nodes": [],
+							"textData": {
+								"text": "A részvétel ingyenes, de regisztrációhoz kötött.",
+								"decorations": [
+									{
+										"type": "BOLD",
+										"fontWeightValue": 700
+									}
+								]
+							},
+							"_id": ""
+						}
+					],
+					"paragraphData": {},
+					"_id": "p-004"
+				},
+				{
+					"type": "PARAGRAPH",
+					"nodes": [
+						{
+							"type": "TEXT",
+							"nodes": [],
+							"textData": {
+								"text": "Kapcsolat: ",
+								"decorations": []
+							},
+							"_id": ""
+						},
+						{
+							"type": "TEXT",
+							"nodes": [],
+							"textData": {
+								"text": "example@example.com",
+								"decorations": [
+									{
+										"type": "LINK",
+										"linkData": {
+											"link": {
+												"url": "mailto:example@example.com",
+												"target": "SELF"
+											}
+										}
+									}
+								]
+							},
+							"_id": ""
+						}
+					],
+					"paragraphData": {},
+					"_id": "p-005"
+				}
+			],
+			"documentStyle": {}
+		},
+		"publishedDate": "2026-01-20T12:00:00.000Z",
+		"_id": "dummy-event-id-xyz",
+		"_createdDate": "2026-01-10T09:00:00.000Z",
+		"_updatedDate": "2026-01-20T12:30:00.000Z"
+	}
+]

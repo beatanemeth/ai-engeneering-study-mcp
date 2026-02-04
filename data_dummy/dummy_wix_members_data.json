@@ -1,0 +1,46 @@
+{
+	"_items": [
+		{
+			"status": "UNKNOWN",
+			"contactId": "b2c3d4e5-f6a7-4b8c-9d0e-1f2a3b4c5d6e",
+			"profile": {
+				"nickname": "Alex Morgan",
+				"slug": "alex-morgan-88214-z9x8-c7v6-b5n4m3k2l1j0",
+				"title": "Senior Solutions Architect"
+			},
+			"privacyStatus": "UNKNOWN",
+			"activityStatus": "UNKNOWN",
+			"_id": "b2c3d4e5-f6a7-4b8c-9d0e-1f2a3b4c5d6e",
+			"_createdDate": "2026-01-05T14:22:10.000Z",
+			"_updatedDate": "2026-01-05T14:25:33.115Z"
+		},
+		{
+			"status": "UNKNOWN",
+			"contactId": "a1b2c3d4-e5f6-4a5b-8c9d-0e1f2a3b4c5d",
+			"profile": {
+				"nickname": "Jordan Smith",
+				"slug": "jordan-smith-11223-p9o8-i7u6-y5t4r3e2w1q0",
+				"title": "Content Strategist"
+			},
+			"privacyStatus": "UNKNOWN",
+			"activityStatus": "UNKNOWN",
+			"_id": "a1b2c3d4-e5f6-4a5b-8c9d-0e1f2a3b4c5d",
+			"_createdDate": "2026-01-15T09:10:00.000Z",
+			"_updatedDate": "2026-01-16T11:45:19.420Z"
+		},
+		{
+			"status": "UNKNOWN",
+			"contactId": "f9e8d7c6-b5a4-4321-9876-543210fedcba",
+			"profile": {
+				"nickname": "Casey Rivera",
+				"slug": "casey-rivera-99442-m1n2-b3v4-c5x6z7l8k9j0",
+				"title": "Project Coordinator"
+			},
+			"privacyStatus": "UNKNOWN",
+			"activityStatus": "UNKNOWN",
+			"_id": "f9e8d7c6-b5a4-4321-9876-543210fedcba",
+			"_createdDate": "2026-02-01T16:55:40.000Z",
+			"_updatedDate": "2026-02-03T08:12:05.991Z"
+		}
+	]
+}

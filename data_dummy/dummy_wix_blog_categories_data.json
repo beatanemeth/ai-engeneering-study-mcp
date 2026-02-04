@@ -1,0 +1,38 @@
+[
+	{
+		"label": "#DeepWorkFocus",
+		"postCount": 142,
+		"description": "Techniques and habits for achieving high-concentration states—covering time-blocking, digital minimalism, and flow.",
+		"title": "#deepworkfocus",
+		"displayPosition": 1,
+		"language": "en",
+		"slug": "deep-work-focus",
+		"translations": [],
+		"_id": "8f3e2a11-9c5d-4e2a-b7b1-f8a9c0d2e4f5",
+		"_updatedDate": "2026-02-01T10:15:22.450Z"
+	},
+	{
+		"label": "#SmartHomeLiving",
+		"postCount": 85,
+		"description": "Automating daily routines with IoT devices, energy-saving tips, and the latest in smart ecosystem integration.",
+		"title": "#smarthomeliving",
+		"displayPosition": 2,
+		"language": "en",
+		"slug": "smart-home-living",
+		"translations": [],
+		"_id": "2d9c4b33-1f8a-4c2b-a0e4-d6b8f7a1c9e0",
+		"_updatedDate": "2026-02-02T14:30:11.112Z"
+	},
+	{
+		"label": "#EcoTraveler",
+		"postCount": 210,
+		"description": "Sustainable travel guides, low-impact gear reviews, and tips for exploring the world without leaving a footprint.",
+		"title": "#ecotraveler",
+		"displayPosition": 3,
+		"language": "en",
+		"slug": "eco-traveler",
+		"translations": [],
+		"_id": "5a1b9c8d-e4f3-4a2b-8d7e-6c5b4a3f2e1d",
+		"_updatedDate": "2026-02-03T09:05:55.000Z"
+	}
+]
