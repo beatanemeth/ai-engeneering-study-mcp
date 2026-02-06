@@ -5,6 +5,27 @@ The goal is to enable a language model to answer analytics-style questions relia
 
 ---
 
+## Table of Contents
+
+1. [Data Preparation](#1-data-preparation)
+   1.1. [Download Data](#download-data)
+   1.2. [Clean Data](#clean-data)
+
+2. [Preparing MCP Tools](#2-preparing-mcp-tools)
+   2.1. [What Kind of Questions Are Possible?](#what-kind-of-questions-are-possible)
+   2.2. [Raw Question Set](#raw-question-set)
+
+3. [Polishing the Questions](#3-polishing-the-questions)
+
+4. [How to Organize MCP Tools?](#4-how-to-organize-mcp-tools)
+   4.1. [Aggregator Tools](#1-aggregator-tools)
+   4.2. [Analyst Tools](#2-analyst-tools)
+   4.3. [Thematic Finder Tools](#3-thematic-finder-tools)
+
+5. [Mapping Questions to MCP Tool Groups](#5-mapping-questions-to-mcp-tool-groups)
+
+6. [Making Hands Dirty](#6-making-hands-dirty)
+
 ---
 
 ## 1. Data Preparation

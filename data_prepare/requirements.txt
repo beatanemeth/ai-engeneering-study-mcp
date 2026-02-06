@@ -1,0 +1,6 @@
+# Specific Dependencies for the Jupyter Notebook Service
+
+pandas
+jupyter
+ipykernel
+nbstripout

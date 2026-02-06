@@ -1,6 +1,6 @@
 # Jupyter Notebook Setup
 
-> If you intend to use the data preparation services, follow the steps below to configure your local environment.
+> If you only want to use the **Jupyter Notebook** environment independently, follow the steps below.
 
 ---
 
@@ -14,11 +14,21 @@ Ensure you have initialized your virtual environment as described in the **root 
 
 ### 2. Install Dependencies
 
-With the **virtual environment active**, install the necessary data processing and notebook packages:
+With the virtual environment active, install all necessary packages in a single command.
 
-```bash
-pip install pandas jupyter ipykernel
+```Bash
+# Navigate to the Directory
+cd data_prepare/
+
+# Update pip
+python -m pip install --upgrade pip
+
+# Install the Packages
+pip install -r requirements.txt
 ```
+
+ℹ️ The `requirements.txt` file contains **all dependencies required** for this notebook environment:
+`jupyter`, `pandas`, `ipykernel`, `nbstripout`.
 
 ### 3. Register the Jupyter Kernel
 
@@ -71,6 +81,8 @@ jupyter kernelspec uninstall ai-engineering-study-mcp
 
 ### 1. **Launch Jupyter**
 
+With the virtual environment active:
+
 ```Bash
 jupyter notebook
 ```
@@ -89,7 +101,7 @@ When you are finished working, follow these steps to cleanly close your session:
 
 ### 1. Stop the Jupyter Server
 
-Instead of using terminal shortcuts, it is often more reliable to shut down directly from the browser:
+Instead of relying on terminal shortcuts, it’s usually more reliable to shut down directly from the browser UI:
 
 - **Save** your work in any open Notebooks.
 - Go to the main Jupyter dashboard (the file list tab).
@@ -103,45 +115,18 @@ Once the server has stopped, return to your terminal and run:
 deactivate
 ```
 
----
+Your command prompt will return to its default state, and the environment name (`.venv`) will disappear.
 
 ---
 
-## Jupyter Cleanup & Git Hygiene 🧹
+---
+
+## Jupyter Cleanup 🧹
 
 > This project uses `nbstripout` to keep notebook outputs out of version control.
 
 - [kynan/nbstripout](https://github.com/kynan/nbstripout)
-- [pre-commit/pre-commit-hooks](https://github.com/pre-commit/pre-commit-hooks)
 
-Follow these steps in your project terminal with your `.venv` active:
+The `nbstripout` package is included in the `requirements.txt` file, and is installed with all other packages as described above.
 
-### 1. Configure the Notebook "Filter"
-
-This handles the automatic stripping of cell outputs (prints, graphs, etc.) whenever you `git add`.
-
-```Bash
-pip install nbstripout
-nbstripout --install
-```
-
-### 2. Create the Configuration File
-
-Create a file named `.pre-commit-config.yaml` in your root directory.
-
-### 3. Initialize the Manager
-
-This installs the "hooks" into your local `.git` folder so they run automatically on every commit.
-
-```Bash
-pip install pre-commit
-pre-commit install
-```
-
-### 4. The Final Verification (Optional)
-
-Run this to check your existing files for issues before your next commit. If a notebook has outputs, this command will clean them for you right now.
-
-```Bash
-pre-commit run --all-files
-```
+The file named `.pre-commit-config.yaml` contains the necessary configurations.

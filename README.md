@@ -1,11 +1,23 @@
 # Study MCP
 
-This repository explores how **Model Context Protocol (MCP)** can be used to overcome a common limitation of RAG-based systems when working with **structured, real-world data**.
+This repository explores how **Model Context Protocol (MCP)** can be used to overcome a common limitation of RAG-based systems when working with **structured, real-world data** such as events, articles, and usage metrics.
+
+## Table of Contents
+
+1. [Background & Motivation](#background--motivation)
+2. [How MCP Improves InsightHubAI](#how-mcp-improves-insighthubai)
+3. [Data Preparation](#data-preparation)
+4. [MCP Tools Development](#mcp-tools-development)
+5. [MCP Server Setup](#mcp-server-setup)
+6. [Technical Details](#technical-details)
+7. [Summary](#summary)
 
 ## Background & Motivation
 
-📖 **Related Medium article**
-[The AI Engineering Challenge: A Three-Step Journey into RAG, LangChain, and Real-World Data](https://medium.com/@beataspace/the-ai-engineering-challenge-a-three-step-journey-into-rag-langchain-and-real-world-data-90badbd139f0)
+- 📖 **Related Medium article**
+  [The AI Engineering Challenge: A Three-Step Journey into RAG, LangChain, and Real-World Data](https://medium.com/@beataspace/the-ai-engineering-challenge-a-three-step-journey-into-rag-langchain-and-real-world-data-90badbd139f0)
+- 🧑‍💻 **Related GitHub repository**
+  [LangChain RAG Project: Unified Custom Data Chat](https://github.com/beatanemeth/ai-engineering-custom-wix-data-chat)
 
 In the article above, it was identified that **InsightHubAI** struggled with _data mining_–style questions.
 This highlights a classic **“RAG vs. Structured Data”** problem:
@@ -43,7 +55,7 @@ In short, MCP turns your data into a **functional database interface for the LLM
 
 ### Download Data
 
-The following datasets were downloaded as a JSON files:
+The following datasets were downloaded as JSON files:
 
 - Events
 - Articles
@@ -56,7 +68,7 @@ To preserve structure without exposing real data:
 - a `/data_dummy` folder is included
 - it contains representative files with **dummy values** matching the original schemas
 
----
+**Note**: For simplicity, this is a one-time download rather than a continuous ingestion pipeline.
 
 ### Clean Data
 
@@ -70,7 +82,7 @@ After downloading, the data was cleaned and normalized to ensure:
 Data preparation was performed using **Jupyter Notebook and Pandas**.
 
 📂 See: `/data_prepare`
-This folder documents the full data preparation process.
+This folder documents the full data preparation process, including cleaning, normalization, and schema validation.
 
 The cleaned datasets were saved locally in `/data_prepared`, which is excluded from GitHub.
 Instead, a `/data_prepared_dummy` folder is included with cleaned dummy data reflecting the final structure.
@@ -105,19 +117,18 @@ This setup demonstrates how the developed MCP tools can be exposed and invoked p
 
 ---
 
-## Technical Details 🛠️
+## Technical Details
 
 This project is built using a local-first approach, prioritizing open-source tools and data privacy.
 
 ### 📦 Prerequisites
 
-- **Python 3.x**
-- **Python**: Version 3.10 or higher
+- **Python 3.10 or higher**
 - **LLM Runtime**: [Ollama](https://ollama.com/) (running `qwen2.5:7b`)
 
 ### 🖥️ Operating System Used
 
-- Linux Mint 21.2
+- Linux Mint 21.2 (development environment used)
 
 ### 🤖 MCP Stack Overview
 
@@ -129,7 +140,7 @@ This project is built using a local-first approach, prioritizing open-source too
 
 It is best practice to use a virtual environment to isolate project dependencies.
 
-1. Initialize the Environment
+#### 1. Initialize the Environment
 
 Create the virtual environment in the project root:
 
@@ -137,7 +148,7 @@ Create the virtual environment in the project root:
 python3 -m venv .venv
 ```
 
-2. Activate the environment
+#### 2. Activate the Environment
 
 ```Bash
 # macOS/Linux:
@@ -152,9 +163,9 @@ source .venv/bin/activate
 
 Your command prompt will now show the environment name, like `(.venv) user@host:~/project$`, indicating that it is active.
 
-#### Install Project Dependencies
+#### 3. Install Project Dependencies
 
-Update `pip` and install the required libraries for the **entire repository**:
+This installs all dependencies required to explore the full project end-to-end.
 
 ```Bash
 # Update pip
@@ -164,23 +175,36 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-### Run the MCP Service ▶️
-
-For details see:
+⚠️ **IMPORTANT:**
+Whether you have installed the **entire repository** or only want to use a **part of it**, you **must consult the dedicated README** for each service to understand how to **set it up** and **run it** correctly:
 
 - **MCP Server**: `/mcp_server/README.md`
+- **JWT Microservice**: `/data_get/jwt_microservice/README.md`
+- **Jupyter Notebooks**: `/data_prepare/README.md`
 
-⚠️ **IMPORTANT:** If you want to run **_other services_**, please refer to the dedicated instructions in these subdirectories:
-
-- **JWT Microservice**: `/data_get/jwt_microservice/README.md` — Configures data fetching from Wix.
-- **Jupyter Notebooks**: `/data_prepare/README.md` — Setup for data cleaning.
-
-#### Shutting Down
+#### 4. Shutting Down
 
 When you are finished working, simply run:
 
 ```Bash
 deactivate
+```
+
+Your command prompt will return to its default state, and the environment name (`.venv`) will disappear.
+
+### 🧹 Jupyter Cleanup & Git Hygiene
+
+> This project uses `nbstripout` to keep notebook outputs out of version control and a `pre-commit` hook to ensure consistent formatting for all files.
+
+- [kynan/nbstripout](https://github.com/kynan/nbstripout)
+- [pre-commit/pre-commit-hooks](https://github.com/pre-commit/pre-commit-hooks)
+
+Configuration details can be found in `.pre-commit-config.yaml`.
+
+To check all files and automatically clean notebook outputs before committing, run:
+
+```Bash
+pre-commit run --all-files
 ```
 
 ---

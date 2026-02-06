@@ -1,0 +1,6 @@
+# Specific Dependencies for the MCP Service
+
+fastmcp
+pandas
+mcp
+ollama
