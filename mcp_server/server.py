@@ -199,7 +199,16 @@ def get_blog_stats(
     category: Optional[str] = None,
     tag: Optional[str] = None,
 ) -> dict:
-    """Returns blog post counts and monthly distribution."""
+    """
+    Retrieves analytical data for blog posts, including frequency and timing.
+
+    Use this tool to answer:
+    - How many blog posts were published (total_posts).
+    - Which month or time of year was the most active/busiest (monthly_distribution).
+    - What are the titles of recent or relevant posts (sample_titles).
+
+    The monthly_distribution return value maps month numbers (1-12) to the count of posts.
+    """
     df_filtered = blog_posts_df.copy()
 
     if year_val:

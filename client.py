@@ -37,6 +37,21 @@ async def run_insight_hub_client():
             ]
 
             user_prompt = "How many participants did we have in 2024 total, and which was the biggest event?"
+            # user_prompt = "Can you list all the unique categories and tags used in the blog posts ever?"
+            # user_prompt = (
+            #     "Give me the breakdown of online vs. venue events for the year 2021."
+            # )
+            # user_prompt = "What was our total attendance across all events, and what was the single most popular event we've ever held?"
+            # user_prompt = "I want to compare our output from 2025. How many blog posts did we write compared to the number of events we held, and which month was the busiest for the number of blog posts published that year?"
+            # user_prompt = "I want to compare our output from 2025. How many blog posts did we write compared to the number of events we held? Which month did we published the most blog posts that year?"
+
+            # Also tested with RAG prompt:
+            # user_prompt = "Were there any events in November 2023, and were there any posts published?"
+            # user_prompt = "List the posts written in 2022!"
+            # user_prompt = (
+            #     "When was the most recent ‘Összehangolva a Simonton módszerrel’ event?"
+            # )
+
             print(f"\n[User]: {user_prompt}")
 
             # 2. First Call to Ollama
