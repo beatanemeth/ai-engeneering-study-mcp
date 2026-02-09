@@ -32,7 +32,7 @@ The goal is to enable a language model to answer analytics-style questions relia
 
 ### Download Data
 
-The following datasets were downloaded as a JSON files:
+The following datasets were downloaded as a **JSON** files:
 
 - Events
 - Articles
@@ -216,7 +216,7 @@ After brainstorming, three main MCP tool categories were identified.
 
 ### 1. Aggregator Tools
 
-**Goal**
+**Goal:**
 Answer questions like:
 
 - “How many events were organized in 2024?”
@@ -227,14 +227,11 @@ Answer questions like:
 - Filter by date
 - Return simple counts
 
-**Why start here?**
-These tools directly solve the original RAG limitation by handling clear _“How many?”_ queries.
-
 ---
 
 ### 2. Analyst Tools
 
-**Goal**
+**Goal:**
 Answer questions like:
 
 - “What was the total attendance in 2025?”
@@ -242,17 +239,13 @@ Answer questions like:
 
 **Pandas logic**
 
-- Access nested fields (e.g. `eventGuests`)
 - Perform sums, averages, and rankings
-
-**Why?**
-This teaches the AI to reason over **nested JSON structures**, not just top-level fields.
 
 ---
 
 ### 3. Thematic Finder Tools
 
-**Goal**
+**Goal:**
 Answer questions like:
 
 - “What articles do we have about nutrition (Táplálkozás)?”
@@ -260,11 +253,7 @@ Answer questions like:
 
 **Pandas logic**
 
-- `.explode()`
-- `.str.contains()`
-- `.isin()`
-
-These tools filter content and return **lists of relevant items**, not metrics.
+- Filter content and return **lists of relevant items**, not metrics.
 
 ---
 
@@ -274,13 +263,12 @@ These tools filter content and return **lists of relevant items**, not metrics.
 
 Using the polished questions, each one was mapped to the most appropriate MCP tool group.
 
-## 🧮 Aggregator Tools
+### 🧮 Aggregator Tools
 
-**Goal:** Simple counts after filtering
-**Pandas primitives:**
-`df[df["date"].dt.year == X]`, `len(df)`, `groupby().size()`
+**Goal:**
+Simple counts after filtering
 
-### 📅 Events — Aggregators
+#### 📅 Events — Aggregators
 
 - What is the total number of events organized to date?
 - Which year had the highest number of events?
@@ -291,7 +279,7 @@ Using the polished questions, each one was mapped to the most appropriate MCP to
 - How many events were organized for a given category across all time?
 - How many events were organized for a given category in a specific year?
 
-### 📰 Articles — Aggregators
+#### 📰 Articles — Aggregators
 
 - What is the total number of articles published to date?
 - Which year had the highest number of published articles?
@@ -301,7 +289,7 @@ Using the polished questions, each one was mapped to the most appropriate MCP to
 - How many articles were published for a given category?
 - How many articles were published for a given tag?
 
-### ✍️ Blog Posts — Aggregators
+#### ✍️ Blog Posts — Aggregators
 
 - What is the total number of blog posts published to date?
 - Which year had the highest number of blog posts published?
@@ -313,18 +301,14 @@ Using the polished questions, each one was mapped to the most appropriate MCP to
 - Who are the blog post authors?
 - How many blog posts has each author published?
 
-**Why these belong here**
-No nested structures, no rankings — just filter → count → group.
-
 ---
 
-## 📊 Analyst Tools
+### 📊 Analyst Tools
 
-**Goal:** Sums, rankings, averages, popularity
-**Pandas primitives:**
-`apply()`, `sum()`, `max()`, `idxmax()`, `sort_values()`
+**Goal:**
+Sums, rankings, averages, popularity
 
-### 📅 Events — Analysts
+#### 📅 Events — Analysts
 
 - What is the total attendance across all events to date?
 - Which events have the highest attendance of all time?
@@ -334,52 +318,42 @@ No nested structures, no rankings — just filter → count → group.
 - Which events have the highest waitlist counts of all time?
 - Which events had the highest waitlist counts in a given year?
 
-### ✍️ Blog Posts — Analysts
+#### ✍️ Blog Posts — Analysts
 
 - Which blog posts have the highest number of views and likes of all time?
 - Which blog posts have the highest number of views and likes in a specific year?
 - Which category has the highest average number of views per post?
 
-**Why these belong here**
-
-- Reading nested or computed values
-- Ranking entities
-- Aggregating metrics, not rows
-
-This is where the MCP starts to feel _smart_, not just fast.
-
 ---
 
-## 🧭 Thematic Finder Tools
+### 🧭 Thematic Finder Tools
 
-**Goal:** Filter by tags, categories, and authors
-**Pandas primitives:**
-`.explode()`, `.str.contains()`, `.isin()`
+**Goal:**
+Filter by tags, categories, and authors
 
-### 📰 Articles — Thematic Finders
-
-- What articles are available for a given category?
-- What articles are available for a given tag?
-- What is the complete list of unique tags used across the site?
-- Which tags are used most frequently?
-
-### ✍️ Blog Posts — Thematic Finders
-
-- What blog posts are available for a given category?
-- What blog posts are available for a given tag?
-- Which blog posts were written by a specific author?
-
-### 📅 Events — Thematic Finders (Optional)
+#### 📅 Events — Thematic Finders (Optional)
 
 - What events are available for a given category?
 - What events were organized in a given year?
 - What online events are available?
 - What venue-based events are available?
 
+#### 📰 Articles — Thematic Finders
+
+- What articles are available for a given category?
+- What articles are available for a given tag?
+- What is the complete list of unique tags used across the site?
+- Which tags are used most frequently?
+
+#### ✍️ Blog Posts — Thematic Finders
+
+- What blog posts are available for a given category?
+- What blog posts are available for a given tag?
+- Which blog posts were written by a specific author?
+
 ---
 
-## 🔁 Mental Shortcut for Future Tools
-
+**Note**: Mental Shortcut for Future Tools
 When adding a new MCP tool, ask:
 
 - **Is the answer a number?** → Aggregator
